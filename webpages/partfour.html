@@ -1,0 +1,110 @@
+   <!--  Name : - Dhruv Modi
+         ID   : - N01649493
+        Web Programming
+         Assignment-3  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation Request</title>
+    <link rel="stylesheet" href="/css/stylepart4.css">
+</head>
+
+<body>
+    <div class="reservation">
+        <h1>Reservation Request</h1>
+        
+        <form action="" id="form">
+            <fieldset id="formfeild">
+             <!-- In this part create a legend tag -->
+                <legend>
+                    General Information
+                </legend>
+                <label for="arrival_date"><b>Arrival Date</b><span>*</span> <b>:</b> </label>
+                <input type="date" name="arrival_date" id="arrival">
+                <span id="Error_arrivaldate"></span>
+                <br>
+                <br>
+                <label for="nights"><b>Nights</b><span>*</span><b>:</b> </label>
+                <input type="text" name="nights" id="nights" size="1">
+                <span id="Error_nights"></span>
+                <br>
+                <br>
+                <!-- Create a dropdown box using option in selection for adults and childrens -->
+                <label for="adults"><b>Adults:</b> </label>
+                <select name="adults" id="adults">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+
+                </select>
+                <br>
+                <br>
+                <label for="children"><b>Children:</b> </label>
+                <select name="children" id="children">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+
+                </select>
+            </fieldset>
+            <br>
+            <br>
+            <fieldset>
+                <legend>
+                    Preferences
+                </legend>
+                <label for="room_type"><b>Room type:</b> </label>
+                <input type="radio" name="room_type" id="room1" checked>Standard
+                <input type="radio" name="room_type" id="room2">Business
+                <input type="radio" name="room_type" id="room3">Suite
+                <br>
+                <br>
+                <label for="bed_type"><b>Bed type:</b> </label>
+                <input type="radio" name="bed_type" id="bed1" checked>King
+                <input type="radio" name="bed_type" id="bed2">Double 
+                <br>
+                <br>
+                <input type="checkbox" name="smoking" id="smoking"><b>Smoking</b>
+            </fieldset>
+            <br>
+            <br>
+            <fieldset>
+                <legend>
+                    Contact Information
+                </legend>
+                <label for="contact_name"><b>Name</b><span>*</span><b>:</b> </label>
+                <input type="text" name="contact_name" id="contname" maxlength="50" >
+                <span id="Error_contactname"></span>
+                <br>
+                <br>
+                <label for="contact_email"><b>Email</b><span>*</span><b>:</b> </label>
+                <input type="text" name="contact_email" id="contemail" placeholder="redson@gmail.com" maxlength="20">
+                <span id="Error_contactemail"></span>
+                <br>
+                <br>
+                <label for="contact_phone"><b>Phone</b><span>*</span><b>:</b> </label>
+                <input type="text" name="contact_phone" id="contphone" placeholder="111-000-9999" maxlength="12">
+                <span id="Error_contactphone"></span>
+       
+            </fieldset><br><br>
+            <button type="submit" id="submit"><b>Submit </b></button>&nbsp;
+            <button type="button" id="clear"><b>Clear</b></button>
+            <p>&copy; Dhruv Modi/ N01649493 2024</p>
+            <button type="button"><a href="../index.html">Click to Sales Tax Calculator</a></button>
+            <button type="button"><a href="../webpages/parttwo.html">Click to Currency Change Calculator</a></button>
+            <button type="button"><a href="../webpages/partthree.html">Click to Income Tax Calculator</a></button>
+        </div>
+    </form>
+
+    <script src="../js/Reservation .js"></script>
+</body>
+</html>
+
